@@ -1,0 +1,19 @@
+<%- include("templates/encabezado") %>
+<%- include("templates/menu") %>
+<h1>login</h1>
+<form action="/revisar" method="post" id="formulario">
+    <div>
+        <input type="text" name="usuario" id="usuario" placeholder="Usuario" autofocus>
+        <span id="mensajeUsuario"></span>
+    </div>
+    <div>
+        <input type="text" name="password" id="password" placeholder="Password">
+        <span id="mensajePassword"></span>
+    </div>
+    <div>
+        <button type="submit">Iniciar sesion</button>
+    </div>
+
+
+</form>
+<%- include("templates/pie") %>
