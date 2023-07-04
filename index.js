@@ -2,7 +2,7 @@ var express=require("express");
 var path=require("path");
 var session=require("express-session");
 var usuariosRutas=require("./rutas/usuarios");
-require("dotenv").config();´
+require("dotenv").config();
 //actualizarinstalacion de la aplicacion 
 
 var app=express();
@@ -16,8 +16,9 @@ app.use(session({
 }))
 app.use("/", usuariosRutas); 
 
-var port=process.env.PORT || 3000;
+var port=process.env.PORT || 5500;
 
 app.listen(port, ()=>{
     console.log(`servidor en http://localhost:${port}`);
 });
+ 
